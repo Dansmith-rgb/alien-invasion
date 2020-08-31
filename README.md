@@ -1,5 +1,5 @@
-# space-invaders
-space invaders game
+# alien invasion
+alien invasion game
 
 
-space invaders game from python crash course
+alien invasion game from python crash course
