@@ -6,7 +6,7 @@ from settings import Settings
 from ship import Ship
 
 class AlienInvasion:
-    """Overall class to mangae the game assets and behavior."""
+    """Overall class to manage the game assets and behavior."""
 
     def __init__(self):
         """Initialize the game, create game resources."""
@@ -35,6 +35,10 @@ class AlienInvasion:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_RIGHT:
+                    # Move the ship to the right.
+                    self.ship.rect.x += 1
 
     def _update_screen(self):
         """Update the imgaes on the screen, and flip to the new screen."""
